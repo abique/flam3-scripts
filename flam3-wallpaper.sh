@@ -45,6 +45,6 @@ fi
 
 echo new sheep size: ${flam_w}x${flam_h}, scale factor \* 100: $ss_h
 
-sed -i 's/size="[0-9]\+ [0-9]\+\"/size="'$flam_w' '$flam_h'"/g' $sheepid.flam3
+sed -i 's/size="[0-9]\+ [0-9]\+\"/size="'$flam_w' '$flam_h'"/g' $sheepid_pad.flam3
 
 ss=$(echo $ss / 100 | bc -l) out=$sheepid_pad-${screen_w}x${screen_h}.png in=$sheepid_pad.flam3 flam3-render
