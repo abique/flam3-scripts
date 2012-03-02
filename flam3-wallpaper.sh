@@ -12,7 +12,10 @@ ss=1
 
 if [[ $# -ne 1 ]] ; then
     echo usage: "$0" sheepid
-    exit 1
+    echo
+    echo you can find flam3 at http://v2d7c.sheepserver.net/cgi/best.cgi
+    echo just pick the sheepid
+    exit 0
 fi
 
 # fetch screen size
