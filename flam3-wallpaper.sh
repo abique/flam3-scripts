@@ -28,7 +28,7 @@ if ! [[ -r $sheepid_pad.flam3 ]] ; then
     wget "$flam3_url" -O $sheepid_pad.flam3
 fi
 
-read flam_w flam_h <<<$(sed -n 's/.*size="\([0-9]\+\) \([0-9]\+\)".*/\1 \2/p' $sheepid_pad.flam3)
+read flam_w flam_h garbage <<<$(sed -n 's/.*size="\([0-9]\+\) \([0-9]\+\)".*/\1 \2/p' $sheepid_pad.flam3)
 
 echo sheep size: ${flam_w}x${flam_h}
 
